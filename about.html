@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nature kids is a Pre School in Kochi, Pre School Kochi, Best Pre School in cochin, day care centre in Kochi Ernakulam, daycare in Kochi, cochin pre-school.">
+  <meta name="keywords" content="Pre School in Kochi, Day Care centre Kochi, Pre School Vyttila, Nursery School Ernakulam, Day Care centre Kochi, vyttila, Ernakulam, Childerns School Kochi, International pre-school Kochi"> 
+  <meta name="owner" content="www.naturekids.in">
+  <meta name="author" content="KS, NatureKids">
+  <meta name="rating" content="General">
+  <meta name="robots" content="Index,follow">
+  <meta name="city" content="Kochi">
+  <meta name="state" content="Kerala">
+  <meta name="country" content="India">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+<style>
+    body {
+        padding-top: 50px;
+    }
+    .container {
+      padding: 80px 120px;
+    }
+    
+    /* Add a background color with a little bit see-through */
+    .navbar {
+        font-family: Montserrat, sans-serif;
+        margin-bottom: 0;
+        /* background-color: #d5d5d5;*/
+        border: 0;
+        font-size: 11px !important;
+        letter-spacing: 4px;
+        opacity:0.9;
+    }
+
+    /* Add black color to all navbar links */
+    .navbar li a, .navbar .navbar-brand {
+        color: #000 !important;
+    }
+
+    /* On hover, the links will turn green */
+    .navbar-nav li a:hover {
+        color: #008000 !important;
+    }
+
+    /* The active link will turn blue*/
+    .navbar-nav li.active a {
+        color: #008 !important;
+        background-color:#29292c !important;
+    }
+
+    /* Remove border color from the collapsible button */
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+
+    /* Dropdown */
+    .open .dropdown-toggle {
+        color: #fff ;
+        background-color: #555 !important;
+    }
+
+    /* Dropdown links */
+    .dropdown-menu li a {
+        color: #000 !important;
+    }
+
+    /* On hover, the dropdown links will turn red */
+    .dropdown-menu li a:hover {
+        background-color: red !important;
+    }
+
+    footer {
+        background-color: #2d2d30;
+        color: #f5f5f5;
+        padding: 32px;
+    }
+
+    footer a {
+        color: #f5f5f5;
+    }
+
+    footer a:hover {
+        color: #777;
+        text-decoration: none;
+    }
+    
+    #googleMap {
+        /*width: 40%; /* Span the entire width of the screen */
+        height: 300px; /* Set the height to 400 pixels */
+    }
+        
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+          <img src="Images/logo.png" alt="Logo" width="90px"> 
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="curriculum.html">CURRICULUM</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li>
+          </ul>
+        </li>--> 
+      </ul>
+    </div>
+  </div>
+    </nav>
+
+    <div class="container-fluid">
+        <h3 class="text-center">Contact us.<br>We look forward to hearing from you.</h3>
+                
+        <div class="col-sm-4">
+            <p><span class="glyphicon glyphicon-map-marker"></span> Door No. 53/497,<br>
+                Junior Janatha Road, Vyttila P.O<br>
+                Cochin -19, Kerala, India</p>
+            <p><span class="glyphicon glyphicon-phone"></span> Ph: +91 8281872827</p>
+            <p><span class="glyphicon glyphicon-phone-alt"></span> Ph: +91 484 2302113</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> email: naturekidskochi@gmail.com</p>
+        </div>
+        
+        <div class="col-sm-4">
+            
+              <div class="row">
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+              </div>
+              <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <button class="btn pull-right" type="submit">Send</button>
+                </div>
+              </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <!-- Add Google Maps -->
+            <div id="googleMap"></div>
+
+            <script src="http://maps.googleapis.com/maps/api/js"></script>
+            <script>
+            var myCenter = new google.maps.LatLng(9.968701, 76.311766);
+
+            function initialize() {
+            var mapProp = {
+            center:myCenter,
+            zoom:16,
+            scrollwheel:true,
+            draggable:true,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+            var marker = new google.maps.Marker({
+            position:myCenter,
+            });
+
+            marker.setMap(map);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
+            <noscript>Your browser does not support JavaScript or you have a script blocker enabled!</noscript>
+            <!--End of Google Maps addition-->
+        </div>
+    </div>
+    
+
+    <footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p>&copy; Nature Kids</p>
+    </footer>
+    
+    <script>
+        $(document).ready(function(){
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
+    <noscript>Your browser does not support JavaScript or you have a script blocker enabled!</noscript>
+</body>
+</html>
