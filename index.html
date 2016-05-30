@@ -7,13 +7,32 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+    .container {
+      padding: 80px 120px;
+    }
+    
+    .carousel-inner img {
+      -webkit-filter: grayscale(90%);
+      /*filter: grayscale(90%); /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  </style>
 </head>
 
 <body>
 
-<div>
+<div class="container text-center">
   <h3>NATUREKIDS KOCHI</h3>
-  <p>We love kids!</p>
+  <p><em>We love kids!</em></p>
 </div>
 
 </body>
