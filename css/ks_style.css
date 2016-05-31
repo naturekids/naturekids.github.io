@@ -92,7 +92,7 @@ footer {
     width:100%;
     background-color: #F8F8F8;
     color: black;
-    text-align: center;
+    text-align: left;
     padding:15px;
     opacity:0.9;
 }
@@ -109,4 +109,12 @@ footer a:hover {
 #contact-form #submit-button:active {
     position:relative;
     top:1px;
+}
+
+.copyright {
+    float: left;
+}
+
+.social { 
+    float: right;
 }
