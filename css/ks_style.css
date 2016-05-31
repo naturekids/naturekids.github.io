@@ -1,6 +1,12 @@
 body {
-        padding-top: 50px;
+    padding:50px 15px 0px;
+    background: url("http://evdekarakteregitimi.com/wp-content/uploads/2014/12/background1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
     }
+
 .container {
     padding: 20px 60px;
 }
@@ -45,7 +51,8 @@ body {
 
 /* On hover, the links will turn black */
 .navbar-nav li a:hover {
-        color: #008000 !important;
+    color: #000 !important;
+    background-color: red !important;
     }
 
 /* The active link */
@@ -87,12 +94,20 @@ body {
 }
 
 /* Footer styling */
-footer {
-      background-color: #2d2d30;
-      color: #f5f5f5;
-      padding: 32px;
-  }
+/*.footer {
+    background-color: #efefef;
+    opacity:0.9;
+    text-align: center;
+}*/
 
+.footer {
+	margin:35px 0px 0px 0px;
+	padding:0px;
+	width:100%;
+	float:left;
+	display:block;
+    text-align: center;
+}
 footer a {
         color: #f5f5f5;
     }
