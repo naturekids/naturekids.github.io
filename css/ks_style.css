@@ -112,8 +112,8 @@ footer {
     bottom: 0;
     height: 50px;
     width:100%;
-    background-color: black;
-    color: white;
+    background-color: #F8F8F8;
+    color: black;
     text-align: center;
     padding:10px;
 }
