@@ -62,6 +62,7 @@
         <br>
         <div class="row">
             <div class="col-md-4">
+                <p>Our details:</p>
                 <p><span class="glyphicon glyphicon-map-marker"></span> Door No. 53/497,<br>
                Junior Janatha Road, Vyttila P.O<br>
                Cochin -19, Kerala, India</p>
@@ -69,12 +70,13 @@
                 <p><span class="glyphicon glyphicon-phone-alt"></span> Ph: +91 484 2302113</p>
                 <p><span class="glyphicon glyphicon-envelope"></span> email: naturekidskochi@gmail.com</p>
             </div>
-            <div class="col-md-8">
+            <div id="contact-form" class="col-md-8">
+                <p>Or fill in this form and we will get in touch.</p>
                 <div class="row">
                     <div class="col-sm-6 form-group">
-                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required><br>
-                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required><br>
-                        <input class="form-control" id="phone" name="phone" placeholder="Phone Number" type="tel" required>
+                        <input class="form-control" id="name" name="name" placeholder="Name (required)" type="text" required><br>
+                        <input class="form-control" id="email" name="email" placeholder="Email (required)" type="email" required><br>
+                        <input class="form-control" id="phone" name="phone" placeholder="Phone Number (required)" type="tel" required>
                     </div>
                     <div class="col-sm-6 form-group">
                         <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="7"></textarea>
@@ -83,11 +85,14 @@
                 <br>
                 <div class="row">
                     <div class="col-md-12 form-group">
-                        <button class="btn pull-right" type="submit">Send</button>
+                        <button class="btn pull-right" id="submit-button" type="submit">Send</button>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <br>
+        
         <!-- Add Google Maps -->
         <script src="http://maps.googleapis.com/maps/api/js"></script>
         <script>
