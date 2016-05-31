@@ -22,7 +22,7 @@
         padding-top: 50px;
     }
     .container {
-      padding: 80px 120px;
+      padding: 40px 120px;
     }
     
     /* Add a background color with a little bit see-through */
@@ -89,35 +89,36 @@
     }
     
     #googleMap {
-        /*width: 40%; /* Span the entire width of the screen */
-        height: 300px; /* Set the height to 400 pixels */
+        /*width: 50%; /* Span the entire width of the screen */
+        height: 300px; /* Set the height to 300 pixels */
     }
         
 </style>
 </head>
 
 <body>
+    
 
     <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">
-          <img src="Images/logo.png" alt="Logo" width="90px"> 
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT US</a></li>
-        <li><a href="curriculum.html">CURRICULUM</a></li>
-        <li><a href="events.html">EVENTS</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
-        <!--<li class="dropdown">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"> 
+                <img src="Images/logo.png" alt="Logo" width="90px">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="curriculum.html">CURRICULUM</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <!--<li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
             <span class="caret"></span>
           </a>
@@ -127,88 +128,76 @@
             <li><a href="#">Media</a></li>
           </ul>
         </li>--> 
-      </ul>
-    </div>
-  </div>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container">
         <h3 class="text-center">Contact us.<br>We look forward to hearing from you.</h3>
-                
-        <div class="col-sm-4">
-            <p><span class="glyphicon glyphicon-map-marker"></span> Door No. 53/497,<br>
-                Junior Janatha Road, Vyttila P.O<br>
-                Cochin -19, Kerala, India</p>
-            <p><span class="glyphicon glyphicon-phone"></span> Ph: +91 8281872827</p>
-            <p><span class="glyphicon glyphicon-phone-alt"></span> Ph: +91 484 2302113</p>
-            <p><span class="glyphicon glyphicon-envelope"></span> email: naturekidskochi@gmail.com</p>
-        </div>
-        
-        <div class="col-sm-4">
-            
-              <div class="row">
-                <div class="col-sm-6 form-group">
-                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <p><span class="glyphicon glyphicon-map-marker"></span> Door No. 53/497,<br>
+               Junior Janatha Road, Vyttila P.O<br>
+               Cochin -19, Kerala, India</p>
+                <p><span class="glyphicon glyphicon-phone"></span> Ph: +91 8281872827</p>
+                <p><span class="glyphicon glyphicon-phone-alt"></span> Ph: +91 484 2302113</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> email: naturekidskochi@gmail.com</p>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required><br>
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required><br>
+                        <input class="form-control" id="phone" name="phone" placeholder="Phone Number" type="number" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="7"></textarea>
+                    </div>
                 </div>
-                <div class="col-sm-6 form-group">
-                  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit">Send</button>
+                    </div>
                 </div>
-              </div>
-              <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-              <div class="row">
-                <div class="col-md-12 form-group">
-                  <button class="btn pull-right" type="submit">Send</button>
-                </div>
-              </div>
+            </div>
         </div>
-        
-        <div class="col-sm-4">
-            <!-- Add Google Maps -->
-            <div id="googleMap"></div>
+        <!-- Add Google Maps -->
+        <div id="googleMap"></div>
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script>
+        var myCenter = new google.maps.LatLng(9.968701, 76.311766);
 
-            <script src="http://maps.googleapis.com/maps/api/js"></script>
-            <script>
-            var myCenter = new google.maps.LatLng(9.968701, 76.311766);
+        function initialize() {
+        var mapProp = {
+        center:myCenter,
+        zoom:16,
+        scrollwheel:false,
+        draggable:true,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
 
-            function initialize() {
-            var mapProp = {
-            center:myCenter,
-            zoom:16,
-            scrollwheel:true,
-            draggable:true,
-            mapTypeId:google.maps.MapTypeId.ROADMAP
-            };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var marker = new google.maps.Marker({
+        position:myCenter,
+        });
 
-            var marker = new google.maps.Marker({
-            position:myCenter,
-            });
+        marker.setMap(map);
+        }
 
-            marker.setMap(map);
-            }
-
-            google.maps.event.addDomListener(window, 'load', initialize);
-            </script>
-            <noscript>Your browser does not support JavaScript or you have a script blocker enabled!</noscript>
-            <!--End of Google Maps addition-->
-        </div>
+        google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+        <noscript>Your browser does not support JavaScript or you have a script blocker enabled!</noscript>
+        <!--End of Google Maps addition-->      
     </div>
     
-
     <footer class="text-center">
-    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-    </a><br><br>
-    <p>&copy; Nature Kids</p>
+    <p>&copy; Nature Kids Kochi | Prepared by KS</p>
     </footer>
     
-    <script>
-        $(document).ready(function(){
-        // Initialize Tooltip
-        $('[data-toggle="tooltip"]').tooltip();
-        })
-    </script>
-    <noscript>Your browser does not support JavaScript or you have a script blocker enabled!</noscript>
+    
 </body>
 </html>
