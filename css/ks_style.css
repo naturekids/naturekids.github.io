@@ -21,14 +21,18 @@ body {
       width: 100%; /* Set width to 100% */
       margin: auto;
     }
+
 .carousel-caption h3 {
           color: #000 !important; /* black coloured titles on photos, for white use #fff */
     }
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
 @media (max-width: 600px) {
     .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+      display: none; 
     }}
-   
+
+/* Remove the padding when the screen is less than 400 pixels wide */
 @media (max-width: 400px){
         .container {
             padding:0;
@@ -55,16 +59,9 @@ body {
         color: #000 !important;
     }
 
-/* On hover, the links will turn black */
+/* On hover, the link's background will turn red */
 .navbar-nav li a:hover {
-    color: #000 !important;
     background-color: red !important;
-    }
-
-/* The active link */
-.navbar-nav li.active a {
-        color: #008 !important;
-        background-color:#29292c !important;
     }
 
 /* Remove border color from the collapsible button */
@@ -72,21 +69,7 @@ body {
         border-color: transparent;
     }
 
-/* Dropdown */
-.open .dropdown-toggle {
-        color: #fff ;
-        background-color: #555 !important;
-    }
-
-/* Dropdown links */
-    .dropdown-menu li a {
-        color: #000 !important;
-    }
-
-/* On hover, the dropdown links will turn red */
-    .dropdown-menu li a:hover {
-        background-color: red !important;
-    }
+.dropbtn 
 
 /* Remove border and add padding to thumbnails */
 .thumbnail {
