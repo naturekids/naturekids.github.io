@@ -62,7 +62,7 @@ body {
 
 /* On hover, the link's background will turn red */
 .navbar-nav li a:hover {
-    background-color: red !important;
+    background-color: #32cd32 !important;
     }
 
 /* Remove border color from the collapsible button */
