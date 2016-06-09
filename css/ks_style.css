@@ -6,7 +6,7 @@ html {
 body {
     margin: 0 0 50px;
     padding:50px 15px 0px;
-    background: url("http://evdekarakteregitimi.com/wp-content/uploads/2014/12/background1.jpg") no-repeat center center fixed;
+    background: url("img/background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
